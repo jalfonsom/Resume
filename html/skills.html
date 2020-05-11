@@ -8,7 +8,27 @@
   <meta name="keywords" "content="Experience, Skills, Education">
   <meta name="author" content="J. Alfonso Maldonado">
   <meta name="viewport" content="width=device-width, intitial-scale="1.0">
+  <link rel="stylesheet" href="styles.css">
   <style>
+      
+    * {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 588px;/*height: 500px Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 body {
   font-family: "Lato", sans-serif;
 }
@@ -38,13 +58,14 @@ body {
 }
 
 .main {
-  margin-left: 137px; /* Same as the width of the sidenav */
+  margin-left: 81px; /* Same as the width of the sidenav */
 }
 
-@media screen andtop: 500px;ding-top: 15px;}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-    
+
 div.fixed {
   position: fixed;
   top: 600px;
@@ -58,8 +79,8 @@ div.fixed {
 }
 </style>
 </head>
-
 <body>
+
 <div class="sidenav">
   <center><strong><a href="../index.html">Alfonso</a></strong><br><br><br>
   <a href="experience.html"><img src="../assets/YogaExperienceLogo.png" alt="Experience" width="70"></a><br><br><br>
@@ -69,9 +90,24 @@ div.fixed {
 </div>
 
 <div class="main">
-  <h2>Skills</h2>
-  <p>All about my Skills</p>
+<div class="row">
+  <div class="column" style="background-color:#ff0000;">
+    <center>
+      <p>Some text..</p></center>
   </div>
+  <div class="column" style="background-color:#00ff00;">
+    <center>
+      <p>Some text..</p></center>
+  </div>
+  <div class="column" style="background-color:#0000ff;">
+    <center>
+      <p>Some text..</p></center>
+  </div>
+  <div class="column" style="background-color:#f0f0f0;">
+    <center>
+      <p>Some text..</p></center>
+  </div>
+</div>
 </body>
   
 <footer>
