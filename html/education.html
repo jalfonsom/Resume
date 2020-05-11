@@ -28,26 +28,7 @@ textshadow {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-  animate {
-  width: 300px;
-  height: 300px;
-  background-color: red;
-  position: relative;
-  animation-name: example;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes example {
-  0%   {background-color:red; left:150px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:150px; top:200px;}
-  100% {background-color:red; left:150px; top:0px;}
-}
+  
 .verticalspace {
   margin-bottom: 400px;
     }
@@ -92,7 +73,7 @@ body {
 </head>
 <body>
 
-<div class="sidenav">
+  <div class="sidenav">
   <center><a href="../index.html">Alfonso</a></center>
   <a href="experience.html"><img src="../assets/YogaExperienceLogo.png" alt="Experience" width="125" height="125"></a>
   <a href="education.html"><img src="../assets/EducationLogo.png" alt="Education" width="125" height="125"></a>
@@ -101,14 +82,16 @@ body {
 
 <div class="main">
   <center>
-    <border>
     <div class="container">
- <img src="../assets/YaleCampusLight.jpg" alt="Yale Campus" border="15">
-  <div class="centered">
-    </border>
-    <textshadow><h2>Education</h2>
-      <p>All about my education</p></textshadow></div>
-  <animate></animate>
+ <border>
+   <img src="../assets/YaleCampusLight.jpg" alt="Yale Campus" border="15">
+      </border>
+      <div class="centered">
+    <textshadow><h2>Yale University</h2>
+      <p> Bachelor of Arts</p>
+      <p>Anthropology Major, Latin American Studies Focusd, Premedical Course</p>
+      <p>Graduated on May 26, 1997</p>
+      </textshadow></div>
   </center>
   </div>
 </body>
