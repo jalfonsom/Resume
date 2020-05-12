@@ -141,9 +141,48 @@ function carousel() {
     German
     Chinese
   </div>
+  
+  <!--Computer Language Column-->
   <div class="column" style="background-color:#ff8c00;">
     <center>
-      <p>Computer languages</p></center>
+    <div class="content" style="max-width:500px">
+      <img class="mySlides" src="../asl/C.png" style="width:200px">
+      <img class="mySlides" src="../asl/O.png" style="width:200px">
+      <img class="mySlides" src="../asl/M.png" style="width:200px">
+      <img class="mySlides" src="../asl/P.png" style="width:200px">
+      <img class="mySlides" src="../asl/U.png" style="width:200px">
+      <img class="mySlides" src="../asl/T.png" style="width:200px">
+      <img class="mySlides" src="../asl/E.png" style="width:200px">
+      <img class="mySlides" src="../asl/R.png" style="width:200px">
+  <img class="mySlides" src="../asl/L.png" style="width:200px">
+  <img class="mySlides" src="../asl/A.png" style="width:150px">
+  <img class="mySlides" src="../asl/N.png" style="width:150px">
+  <img class="mySlides" src="../asl/G.png" style="width:2500px">
+  <img class="mySlides" src="../asl/U.png" style="width:150px">
+  <img class="mySlides" src="../asl/A.png" style="width:150px">
+  <img class="mySlides" src="../asl/G.png" style="width:250px">
+  <img class="mySlides" src="../asl/E.png" style="width:150px">
+  <img class="mySlides" src="../asl/S.png" style="width:150px">
+ </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>  
+    
+    </center>
     C++
     Python
     Javascript
