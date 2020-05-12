@@ -14,8 +14,8 @@
   /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
-  padding: 5px;
+  width: 33%;
+  padding: 3px;
   height: 587px;/*height: 500px Should be removed. Only for demonstration */
 }
 
@@ -30,10 +30,12 @@
 content{max-width:600px;
         max-height: 400px;
         border: 5px solid #000000; }
-    textshadow {text-shadow: 2px 2px #7B241C;}    
+
+textshadow {text-shadow: 2px 2px #7B241C;}    
+
 body {
   font-family: "Lato", sans-serif;
-  background-color: #aed6f1;
+  background-color: #000011;
 }
  
 .sidenav {
@@ -100,16 +102,16 @@ div.fixed {
 <!--Picture Column-->
 <div class="row">
     <div class="column" style="background-color:#000055;">
-    <center>
-      <p style="color:#eee; font-size:35px;"><strong><textshadow>J. Alfonso Maldonado</textshadow></strong></p>
-  <div class="content" style="max-width:400px">
-  <img class="mySlides" src="assets/MeDesk.png" style="width:400px" border="5px">
-  <img class="mySlides" src="assets/MeCentro.png" style="width:250px" border="5px solid #0000f9">
-  <img class="mySlides" src="assets/MeGuitar.png" style="width:400px" border="5px solid #900000">
-  <img class="mySlides" src="assets/MeSoumaya.png" style="width:250px" border="5px solid #00f900">
+      <center>
+        <p style="color:#eee; font-size:35px;"><strong><textshadow>J. Alfonso Maldonado</textshadow></strong></p>
+  <div class="content" style="max-width:300px">
+  <img class="mySlides" src="assets/MeDesk.png" style="width:300px" border="5px">
+  <img class="mySlides" src="assets/MeCentro.png" style="width:250px" border="5px">
+  <img class="mySlides" src="assets/MeGuitar.png" style="width:300px" border="5px">
+  <img class="mySlides" src="assets/MeSoumaya.png" style="width:250px" border="5px">
   
 </div>
-
+      </center>
 <script>
 var myIndex = 0;
 carousel();
@@ -126,7 +128,6 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
-  </center>  
   </div>
   
   <!--Spanish Column-->
