@@ -16,7 +16,7 @@
   /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33%;
+  width: 33.33%;
   padding: 3px;
   height: 587px;/*height: 500px Should be removed. Only for demonstration */
 }
@@ -104,7 +104,33 @@ div.fixed {
 <!--Picture Column-->
 <div class="row">
     <div class="column" style="background-color:#000055;">
-</div>
+<center>
+        <p style="color:#eee; font-size:35px;"><strong><textshadow>J. Alfonso Maldonado</textshadow></strong></p>
+  <div class="content" style="max-width:300px">
+  <img class="mySlides" src="assets/MeDesk.png" style="width:300px" border="5px">
+  <img class="mySlides" src="assets/MeCentro.png" style="width:250px" border="5px">
+  <img class="mySlides" src="assets/MeGuitar.png" style="width:300px" border="5px">
+  <img class="mySlides" src="assets/MeSoumaya.png" style="width:250px" border="5px">
+  
+      </center>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+  
+  </div>
   
   <!--Spanish Column-->
     <div class="row">
