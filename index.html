@@ -10,7 +10,19 @@
   <meta name="viewport" content="width=device-width, intitial-scale="1.0">
   <link rel="icon"  href="hnet.com-image.ico">
   <style>
-    
+  /* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  height: 588px;/*height: 500px Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;  
 .mySlides {display:none;}
 content{max-width:600px;
         max-height: 400px;
@@ -76,8 +88,17 @@ div.fixed {
     </center>
 </div>
 
-<div class="main">  
-  <center><p style="color:#555; font-size:50px;"><strong><textshadow>J. Alfonso Maldonado</textshadow></strong></p>
+<div class="main">
+  <!--English Column-->
+
+    <div class="row">
+      <div class="column" style="background-color:#013d08;">
+    </div>   
+        
+<!--Picture Column-->
+<div class="row">
+  <div class="column" style="background-color:#000055;">
+    <center><p style="color:#555; font-size:50px;"><strong><textshadow>J. Alfonso Maldonado</textshadow></strong></p>
  
     
   <div class="content" style="max-width:500px">
@@ -105,8 +126,12 @@ function carousel() {
 }
 </script>
   </center>  
-   
+  </div>
   
+  <!--Spanish Column-->
+    <div class="row">
+      <div class="column" style="background-color:#013d08;">
+    </div>
   </body>
 
 <footer>
