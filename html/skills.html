@@ -106,11 +106,11 @@ div.fixed {
   .fixed4 {
     position:fixed;
     top:250px;
-    left:1129px;
+    left:1119px;
   }
 .ImageBorder {
     border-width: 2px;
-    border-color: Black;
+    border-color: #000000;
 }  
 ls {font-size:18px; text-shadow:2px 2px #000000;}
 
@@ -235,7 +235,39 @@ function carousel1() {
   <!--Applications Column-->
   <div class="column" style="background-color:#8b0000;">
     <center>
-    <p class="fixed3"><ls>Office:</ls>
+    <div class="content" style="max-width:500px">
+      <img class="mySlides2" src="../asl/A.png" style="width:125px">
+      <img class="mySlides2" src="../asl/P.png" style="width:260px">
+      <img class="mySlides2" src="../asl/P.png" style="width:260px">
+      <img class="mySlides2" src="../asl/L.png" style="width:200px">
+      <img class="mySlides2" src="../asl/I.png" style="width:150px">
+      <img class="mySlides2" src="../asl/C.png" style="width:150px">
+      <img class="mySlides2" src="../asl/A.png" style="width:125px">
+      <img class="mySlides2" src="../asl/T.png" style="width:130px">
+      <img class="mySlides2" src="../asl/I.png" style="width:150px">
+      <img class="mySlides2" src="../asl/O.png" style="width:130px">
+      <img class="mySlides2" src="../asl/N.png" style="width:140px">
+      <img class="mySlides2" src="../asl/S.png" style="width:125px">
+    
+ </div>
+
+<script>
+var myIndex2 = 0;
+carousel2();
+
+function carousel2() {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex2++;
+  if (myIndex2 > x.length) {myIndex2 = 1}    
+  x[myIndex2-1].style.display = "block";  
+  setTimeout(carousel2, 1000); // Change image every second
+}
+</script>
+      <p class="fixed3"><ls>Office:</ls>
     <br>Microsoft Office and Teams
     <br>Google Online Apps
     <br><br><ls>Programming:</ls>
