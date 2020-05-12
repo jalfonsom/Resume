@@ -9,8 +9,14 @@
   <meta name="author" content="J. Alfonso Maldonado">
   <meta name="viewport" content="width=device-width, intitial-scale="1.0">
   <link rel="stylesheet" href="styles.css">
-  <style>
-      
+  
+<style>
+.mySlides {display:none;}
+content{max-width:600px;
+        max-height: 400px;
+        border: 5px solid #000000; }
+    textshadow {text-shadow: 2px 2px #7B241C;} 
+  
     * {
   box-sizing: border-box;
 }
@@ -88,12 +94,40 @@ div.fixed {
   <a href="skills.html"><img src="../assets/YogaSkillsLogo.png" alt="Skills" width="70"></a>
     </center>
 </div>
-
+  
+<!--Languages Column-->
 <div class="main">
 <div class="row">
   <div class="column" style="background-color:#8b0000;">
     <center>
-      <p>Advanced Languages</p></center>
+  <div class="content" style="max-width:500px">
+  <img class="mySlides" src="asl/L.png" style="width:200px">
+  <img class="mySlides" src="asl/A.png" style="width:200px">
+  <img class="mySlides" src="asl/N.png" style="width:200px">
+  <img class="mySlides" src="asl/G.png" style="width:200px">
+  <img class="mySlides" src="asl/U.png" style="width:200px">
+  <img class="mySlides" src="asl/G.png" style="width:200px">
+  <img class="mySlides" src="asl/E.png" style="width:200px">
+  <img class="mySlides" src="asl/S.png" style="width:200px">
+ </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+  </center> <p>Advanced Languages</p></center>
     English
     Spanish
     Portuguese
