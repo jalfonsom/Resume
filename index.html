@@ -10,7 +10,18 @@
   <meta name="viewport" content="width=device-width, intitial-scale="1.0">
   <link rel="icon"  href="hnet.com-image.ico">
   <style>
-a:link {
+.color1 {
+  animation-name: colorchange1;
+  animation-duration: 10s;
+  animation-iteration-count: 20;
+    }
+  @keyframes colorchange1 {
+    0% {background-color:#ffffff;}
+    25% {background-color:#555555;}
+    50% {background-color:#999999;}
+    75% {background-color:#333333;}
+    }
+    a:link {
   color: white;
   background-color: transparent;
   text-decoration: underline;
@@ -165,7 +176,7 @@ function carousel() {
   </div>
   
   <!--Spanish Column-->
-    <div class="row">
+    <div class="row color1">
       <div class="column" style="background-color:#eee">
       <center>
           <marquee direction="up" scrollamount="1" height="400px" width="75%" vspace="100">
