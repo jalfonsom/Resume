@@ -110,7 +110,15 @@ body {
   margin-left: 87px; /* Same as the width of the sidenav */
 }
     
-
+@media screen and (max-width: 600px) {
+  .column {width: 100%;}
+  .sidenav {padding-top: 2px;}
+  .sidenav {overflow: auto;}
+  .sidenav a {font-size: 9px;}
+  .sidenav {height: 100%;}
+  div.fixed {position: absolute;}
+  div.fixed {top: 100px;}
+}
 @media screen and (max-height: 450px) {
   .column {width: 100%;}
   .sidenav {padding-top: 2px;}
