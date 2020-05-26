@@ -174,8 +174,8 @@ footer {
     <center>
   <div class="content" style="max-width:500px">
   <img class="mySlides" src="../assets/Languages.png" style="width:200px">
-  <img class="mySlides" src="../asl/LNew.png" >
-  <img class="mySlides" src="../asl/ANew.png" >
+  <img class="mySlides" src="../asl/LNew.png" style="padding-top:50px" >
+  <img class="mySlides" src="../asl/ANew.png" style="padding-top:50px">
   <img class="mySlides" src="../asl/NNew.png" >
   <img class="mySlides" src="../asl/GNew.png" >
   <img class="mySlides" src="../asl/UNew.png" >
@@ -198,6 +198,7 @@ var myIndex = 0;
 carousel();
 
 function carousel() {
+                                                                          
   var i;
   var x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
@@ -205,7 +206,7 @@ function carousel() {
   }
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "<br><br><br>" + "block" ;  
+  x[myIndex-1].style.display = "block" ;  
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>  
