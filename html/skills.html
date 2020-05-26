@@ -51,7 +51,7 @@ content{max-width:200px;
 .column {
   float: left;
   width: 25%;
-  padding: 100px 5px 5px;
+  padding: 20px 5px 5px;
   height: 588px;
 }
 
@@ -205,7 +205,7 @@ function carousel() {
   }
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
+  x[myIndex-1].style.display = "<br><br><br>" + "block" ;  
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>  
