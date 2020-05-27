@@ -74,6 +74,7 @@ body {
   left: 0;
   background-color: #b09073;
   padding-top: 20px;
+  overflow-x: hidden;
 }
 
 .sidenav a {
@@ -93,13 +94,13 @@ body {
 }
 @media screen and (max-width: 600px) {
   .column {width: 100%;}
-                     .sidenav {overflow: visible;}
-                     footer {overflow:visible;}
+  .sidenav {height: 100%}
+   footer {overflow:visible;}
   }
 @media screen and (max-height: 450px) {
   .column {width: 100%;}
-                     .sidenav {overflow: visible;}
-                     footer {overflow:visible;}
+  .sidenav {height: 100%;}
+  footer {overflow:visible;}
 }
 
 </style>
