@@ -51,7 +51,7 @@ footer {
   left: 0;
   background-color: #b09073;
   padding-top: 20px;
-  overflow: visible;
+  overflow-x: hidden;
 }
 
 .sidenav a {
@@ -65,7 +65,12 @@ footer {
 .sidenav a:hover {
   color: #f1f1f1;
 }
-
+@media screen and (max-width: 600px) {
+  .sidenav {height: 100%;}
+  }
+@media screen and (max-height: 450px) {
+  .sidenav {height: 100%;}
+}
 .main {
   margin-left: 87px;
   overflow: visible;
