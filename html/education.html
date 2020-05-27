@@ -37,7 +37,22 @@ footer {
     font-family: "georgia";
 }
 * {box-sizing: border-box;}
- 
+                          
+.column {
+        float:left;
+        width: 100%;
+        padding: 3px;
+        height: 550px;
+        }
+
+.row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+                       
+.main {margin-left: 87px;}
+
 .sidenav {
   height: 100%;
   width: 87px;
@@ -67,17 +82,6 @@ footer {
 @media screen and (max-height: 450px) {
   .sidenav {height: 100%;}
 }
-.main {
-  margin-left: 87px;
-   float: left;
-   padding: 3px;
-   height: 550px;
-}
-.main:after {
-    content: "";
-    display: table;
-    clear: both;
-                                     }
 
   
 </style>
@@ -92,12 +96,13 @@ footer {
     </center>
 </div>
 
-<div class="main"> <br>
-      <center><img src="../assets/YaleCampus2.png" alt="Yale Campus" width="100%" border="0px" style="margin-bottom:25px;">
+<div class="main column row">
+      <center><img src="../assets/YaleCampus2.png" alt="Yale Campus" width="100%" border="0px">
+      </center>
 </body>
 
   <footer>
    <div style="width:100%; text-align: center; color: #ffffff; background-color: #333333; border: 1px solid #000; height: 70px; padding-top: 5px;"> 5492 CR 32; Longmont CO 80504 <br><a href="mailto:josealfonsomaldonado@gmail.com">JoseAlfonsoMaldonado@gmail.com</a><br>(720) 453-3709
-</div></center><div>
+</div><div>
   </footer>
 </html>
