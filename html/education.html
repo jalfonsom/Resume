@@ -54,14 +54,14 @@ footer {
     font-family: "gerogia";
 }
 .sidenav {
-  height: 580px;
+  height: 100%;
   width: 87px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #111;
-  overflow-x: hidden;
+  overflow: visible;
   padding-top: 20px;
 }
 
@@ -81,32 +81,24 @@ footer {
   margin-left: 87px; /* Same as the width of the sidenav */
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+@media screen and (max-width: 600px) {
+  .column {width: 100%;}
   .sidenav {height: 100%;}
-  .centered {transform: translate(-50%, -30%);}
+  }
+@media screen and (max-height: 450px) {
+  .column {width: 100%;}
+  .sidenav {height: 100%;}
 }
-div.fixed {
-  position: fixed;
-  top: 600px;
-  left: 0;
-  right:0;
-  width: 100%
-  text-align: center;
-  color: #ffffff;
-  background-color: #333333;
-  border: 1px solid #000;
-}  
+  
 </style>
 </head>
 <body>
 
   <div class="sidenav">
-  <center><strong><a href="../index.html">Alfonso</a></strong><br><br><br>
-  <a href="experience.html"><img src="../assets/YogaExperienceLogo.png" alt="Experience" width="70"></a><br><br><br>
-  <a href="education.html"><img src="../assets/EducationLogo.png" alt="Education" width="70"></a><br><br><br>
-  <a href="skills.html"><img src="../assets/YogaSkillsLogo.png" alt="Skills" width="70"></a>
+   <center><a href="../index.html"><img src="../assets/Alfonso.png" alt="Alfonso" style="width: 50%; padding-top: 10px;"></a>
+  <a href="experience.html"><img src="../assets/YogaExperienceLogo.png" alt="Experience" style="width: 90%; padding-top: 10px;"></a>
+  <a href="education.html"><img src="../assets/EducationLogo.png" alt="Education" style="width:90%; padding-top: 10px;"></a>
+  <a href="skills.html"><img src="../assets/YogaSkillsLogo.png" alt="Skills" style="width:90%; padding-top: 10px;"></a>
     </center>
 </div>
 
@@ -122,15 +114,7 @@ div.fixed {
 </body>
 
   <footer>
-   <div class="fixed"> 
-     <center><p>5492 CR 32; Longmont, CO 80504
-      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp       
-      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <a href="mailto:someone@example.com">JoseAlfonsoMaldonado@gmail.com</a>
-      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
-      (720) 453-3709</p>
-      </center>
-  </div>
+   <div style="text-align: center; color: #ffffff; background-color: #333333; border: 1px solid #000; height: 70px; padding-top: 5px; overflow: visible;"> 5492 CR 32; Longmont CO 80504 <br><a href="mailto:josealfonsomaldonado@gmail.com">JoseAlfonsoMaldonado@gmail.com</a><br>(720) 453-3709
+</div>
   </footer>
 </html>
