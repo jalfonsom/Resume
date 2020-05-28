@@ -42,34 +42,34 @@ footer {
       }
 
 <!-- business header text -->
-busT    {                       
+.busT    {                       
       color: #FFFFFF;
       text-shadow:  2px 2px 0 #046D04, 2px -2px 0 #046D04, -2px 2px 0 #046D04, -2px -2px 0 #046D04, 
                     2px 0px 0 #046D04, 0px 2px 0 #046D04, -2px 0px 0 #046D04, 0px -2px 0 #046D04;
-      font-size: 20px;
+      font-size: 40px;
       text-align: center;
       }
 
 <!-- technology header text -->
-techT    {                     
+.techT    {                     
       color: #FFFFFF;
       text-shadow:  2px 2px 0 #C4091A, 2px -2px 0 #C4091A, -2px 2px 0 #C4091A, -2px -2px 0 #C4091A, 
                     2px 0px 0 #C4091A, 0px 2px 0 #C4091A, -2px 0px 0 #C4091A, 0px -2px 0 #C4091A;
-      font-size: 20px;
+      font-size: 40px;
       text-align: center;
       }
 
 <!-- media header text -->
-mediaT    {                        
+.mediaT    {                        
       color: #FFFFFF;
       text-shadow:  2px 2px 0 #FF8C00, 2px -2px 0 #FF8C00, -2px 2px 0 #FF8C00, -2px -2px 0 #FF8C00, 
                     2px 0px 0 #FF8C00, 0px 2px 0 #FF8C00, -2px 0px 0 #FF8C00, 0px -2px 0 #FF8C00;
-      font-size: 20px;
+      font-size: 40px;
       text-align: center;
       }
 
 <!-- science header text -->
-sciT    {                       
+.sciT    {                       
       color: #FFFFFF;
       text-shadow:  2px 2px 0 #8800AA, 2px -2px 0 #8800AA, -2px 2px 0 #8800AA, -2px -2px 0 #8800AA, 
                     2px 0px 0 #8800AA, 0px 2px 0 #8800AA, -2px 0px 0 #8800AA, 0px -2px 0 #8800AA;
@@ -79,7 +79,7 @@ sciT    {
 
 
 <!--large black text -->
-l     {                       
+.l     {                       
       line-height: 17px; 
       font-size:15px; 
       font-weight:bold; 
@@ -90,7 +90,7 @@ l     {
       }
 
 <!-- large white text -->
-lw    {                      
+.lw    {                      
       line-height: 17px; 
       font-size:15px; 
       font-weight:bold; 
@@ -102,13 +102,13 @@ lw    {
       }
 
 <!-- small black text -->
-sm    {line-height:14px;              
+.sm    {line-height:14px;              
       font-size:12px;
       text-align: center;
       }
 
 <!-- small white text -->
-sw    {line-height:14px;     
+.sw   {line-height:14px;     
       font-size:12px; 
       color:#ffffff;
       text-align: center;
@@ -135,6 +135,7 @@ sw    {line-height:14px;
       display: table;
       clear: both;
       }
+                 
 <!-- navigation bar -->
 .sidenav {
       height: 100%;
@@ -187,73 +188,71 @@ sw    {line-height:14px;
 <div class="main">
   <div class="row">
     <div class="column" style="background-color:#013d08;">
-                                                       
-<!-- <img src="../assets/BusinessConsultingHeadLogo.png" alt="Business Consulting Experience" width="150px" height="135px">-->
 
-    <div><busT>BUSINESS</busT></div>  
-    <p><lw>International BI Consultant</lw>
-        <br><sw>Mexico City and Colorado<br>(January 2012 – Present)</sw></p>
-    <p><sw>  
+    <div class="busT">BUSINESS</div>  
+        <p class="lw">International BI Consultant</p>
+        <br>
+        <p class="sw">Mexico City and Colorado<br>(January 2012 – Present)</p>
+    <p class="sw">  
             ◘ Develop software algorithms for business automation and computational analysis.
         <br>◘ Consult multi-national executives in Latin America on international contracts and antitrust laws.
         <br>◘ Research and write industry legal briefs on international business and trade.
-      </sw></p>
-    <p><lw>CEO's Executive Assistant</lw><sw><br>Violy & Company, New York City<br>(June 1997 - May 1998)</sw></p>
-    <p><sw>
+      </p>
+    <p class="lw">CEO's Executive Assistant</lw><sw><br>Violy & Company, New York City<br>(June 1997 - May 1998)</p>
+    <p class="sw">
             ◘ Wrote business correspondence for mergers and acquisitions in Latin America 
-       </sw></p>
+       </p>
   </div>
   
 <!--Technology Column-->
   <div class="column" style="background-color:#ffff00;">
-    
-<!-- <center><img src="../assets/TechnologyHeadLogo.png" alt="Technology Experience" width="150px" height="135px">--> 
       
-      <div><techT>TECHNOLOGY</techT></div>
-      <p><l>Commercial Director</l>
-        <br><sm>Cortado Inc., Latin America<br>(July 2007 – January 2012)</sm></p>
-      <p><sm>
+      <div class="techT">TECHNOLOGY</div>
+        <p class="l">Commercial Director</p>
+        <br><p class="sm">Cortado Inc., Latin America<br>(July 2007 – January 2012)</p>
+      <p class="sm">
           ◘ Recruited and trained software distribution channels.
         <br>◘ Coordinated technology implementations for globally distributed systems.
-        <br>◘ Established ThinPrint as the industry leader in Latin America by increasing sales over 400%.</sm></p>
+        <br>◘ Established ThinPrint as the industry leader in Latin America by increasing sales over 400%.</p>
           
-      <p><l>Sales Trainer</l><sm>
-        <br>Sprint, Colorado<br>(June 2005 - May 2007)</sm></p>
-          <p><sm>◘ Trained points of sale on emerging cellular technology.</sm></p>
+      <p class="l">Sales Trainer</p>
+        <br><p class="sm">Sprint, Colorado<br>(June 2005 - May 2007)</p>
+          <p class="sm">◘ Trained points of sale on emerging cellular technology.</p>
   </div>
           
 <!--Media Column-->
   <div class="column" style="background-color:#013d08;">
-<!--<center><img src="../assets/MediaHeadLogo.png" alt="Media Experience" width="150px" height="135px"></center>-->
 
-      <div><mediaT>MEDIA</mediaT></div>               
-      <p><lw>Marketing Director</lw><sw><br>La Nueva Voz, Denver<br>(January 2003 – April 2005)</sw></p>
-      <p><sw>
+      <div class="mediaT">MEDIA</div>               
+      <p class="lw">Marketing Director</p>
+      <br><p class="sw">La Nueva Voz, Denver<br>(January 2003 – April 2005)</p>
+      <p class="sw">
               ◘ Created editorial supplements for niche markets.
           <br>◘ Increased sales over 300%, doubling circulation and quadrupling page count.
-          <br>◘ Produced and moderated live televised debates for Denver government.</sw></p> 
-      <p><lw>Editor</lw><sw><br>Televisa, Miami and Mexico City<br>(July 1999 – November 2002)</sw></p>
-      <p><sw>
-      ◘ Produced online productions for alo.com. and wrote daily news articles in Spanish.</justify></sw></p>
-      <p><lw>Publisher's Executive Assistant</lw>
-        <br><sw>La Opinion, Los Angeles<br>(June 1998 - June 1999)</sw></p>
-        <p><sw>
+          <br>◘ Produced and moderated live televised debates for Denver government.</p> 
+      <p class="lw">Editor</p>
+      <br><p class="sw">Televisa, Miami and Mexico City<br>(July 1999 – November 2002)</p>
+      <p class="sw">
+      ◘ Produced online productions for alo.com. and wrote daily news articles in Spanish.</p>
+      <p class="lw">Publisher's Executive Assistant</p>
+        <br><p class="sw">La Opinion, Los Angeles<br>(June 1998 - June 1999)</p>
+        <p class="sw">
       ◘ Wrote proposals for new business across all broadcast media.
-          </sw></p>
+          </p>
   </div>
 <!--Science Column-->
   <div class="column" style="background-color:#ffff00;">
-<!--<center><img src="../assets/ScienceHeadLogo.png" alt="Science Experience" width="150px" height="135px"></center> -->
 
-    <div><sciT>SCIENCE</sciT></div>
-    <p><l>Genetics Researcher</l>
-     <sm><br>Boyer Center for Molecular Medicine at Yale<br>(September 1993 - May 1997)</sm></p></center>
-    <p><sm>
-          ◘ Sequenced the DNA mutations of Caenorhabditis elegans and their offspring after exposure to industrial chemicals.></sm></p>
-    <p><l>Pathology Researcher</l><sm><br>CU Center for Diabetes Research<br>(June 1991 - August 1993)</sm></p>
-    <p><sm>
+    <div class="sciT">SCIENCE</div>
+      <p class="l">Genetics Researcher</p>
+      <p class="sm"><br>Boyer Center for Molecular Medicine at Yale<br>(September 1993 - May 1997)</p>
+      <p class="sm">
+          ◘ Sequenced the DNA mutations of Caenorhabditis elegans and their offspring after exposure to industrial chemicals.></p>
+      <p class="l">Pathology Researcher</p>
+      <p class="sm"><br>CU Center for Diabetes Research<br>(June 1991 - August 1993)</p>
+      <p class="sm">
       ◘ Transplanted langerhan cells in mice in attempts to induce insulin production by organs other than the pancreas. Results were analyzed with Elispot assays. 
-    </sm></p>
+      </p>
   </div>
 </div>
 </div>  
