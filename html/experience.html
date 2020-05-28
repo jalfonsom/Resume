@@ -116,30 +116,27 @@ footer {
       text-align: center;
       }
                                                                   -->
-*     {box-sizing: border-box;
-      }
-
-.main {
-      margin-left: 87px;
-      }
-
-<!-- create three equal columns that floats next to each other -->
-.column {
+* {
+      box-sizing: border-box;
+      }  
+  
+.column {             /* Create three equal columns that floats next to each other */
       float: left;
-      width: 25%;
-      padding: 5px;
+      width: 33.33%;
+      padding: 3px;
       height: 550px;
       }
 
-<!-- clear floats after the columns  -->
-.row:after {
+.row:after {          /* Clear floats after the columns */
       content: "";
       display: table;
-      clear: both;
+      clear: both;  
       }
-                 
-<!-- navigation bar -->
-.sidenav {
+.main {
+      margin-left: 87px;
+      }
+                            
+.sidenav {                /*Navigation bar code */
       height: 100%;
       width: 87px;
       position: fixed;
@@ -147,8 +144,8 @@ footer {
       top: 0;
       left: 0;
       background-color: #b09073;
-      padding-top: 20px;
       overflow-x: hidden;
+      padding-top: 20px;
       }
 
 .sidenav a {
@@ -168,22 +165,26 @@ footer {
       .column {width: 100%;}
       .sidenav {height: 100%;}
       .main {width: 100%;}
+      .marquee p {tranform: translateY(20%);}
       }
+
 @media screen and (max-height: 450px) {
       .column {width: 100%;}
       .sidenav {height: 100%;}
-      .main {height: 100%;}
+      .main {width: 100%;}
+      .marquee p {tranform: translateY(20%);}
       }
- </style>
+</style>
 </head>
-                 
+
 <body>
+  
 <div class="sidenav">
-  <center><a href="../index.html"><img src="../assets/sideFace2.png" alt="Alfonso" style="width: 90%; padding-top: 10px;"></a>
-  <a href="experience.html"><img src="../assets/YogaExperienceLogo.png" alt="Experience" style="width: 90%; padding-top: 10px;"></a>
-  <a href="education.html"><img src="../assets/EducationLogo.png" alt="Education" style="width:90%; padding-top: 10px;"></a>
-  <a href="skills.html"><img src="../assets/YogaSkillsLogo.png" alt="Skills" style="width:90%; padding-top: 10px;"></a>
-  </center>
+  <center><a href="index.html"><img src="assets/sideFace2.png" alt="Alfonso" style="width: 90%; padding-top: 10px;"></a>
+  <a href="html/experience.html"><img src="assets/YogaExperienceLogo.png" alt="Experience" style="width: 90%; padding-top: 10px;"></a>
+  <a href="html/education.html"><img src="assets/EducationLogo.png" alt="Education" style="width:90%; padding-top: 10px;"></a>
+  <a href="html/skills.html"><img src="assets/YogaSkillsLogo.png" alt="Skills" style="width:90%; padding-top: 10px;"></a>
+    </center>
 </div>
 
 <!--Business Column-->
