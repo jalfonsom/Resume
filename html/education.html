@@ -8,84 +8,86 @@
   <meta name="keywords" "content="Experience, Skills, Education">
   <meta name="author" content="J. Alfonso Maldonado">
   <meta name="viewport" content="width=device-width, intitial-scale=1">
-  <style>
-a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}        
   
+<style>
+                                        /* link style code */
+a:link {
+      color: white;
+      background-color: transparent;
+      text-decoration: underline;
+      }
+a:visited {
+      color: pink;
+      background-color: transparent;
+      text-decoration: none;
+      }
+a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+      }
+a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+      }        
+                                      /* formatting code */  
 body {background-color: #ffffff}
-}
 
-footer {
-    font-family: "georgia";
-}
-* {box-sizing: border-box;}
+footer {font-family: "georgia";}
+
+*     {box-sizing: border-box;}
                           
 .column {
-        float:left;
-        width: 100%;
-        padding: 3px;
-        height: 550px;
-        }
+      float:left;
+      width: 100%;
+      padding: 3px;
+      height: 550px;
+      }
 
 .row:after {
-            content: "";
-            display: table;
-            clear: both;
-            }
+      content: "";
+      display: table;
+      clear: both;
+      }
                        
 .main {margin-left: 87px;}
 
+                                  /* navigation code */
 .sidenav {
-  height: 100%;
-  width: 87px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #b09073;
-  padding-top: 20px;
-  overflow-x: hidden;
-}
+      height: 100%;
+      width: 87px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #b09073;
+      padding-top: 20px;
+      overflow-x: hidden;
+      }
 
 .sidenav a {
-  padding: 3px 3px 3px 3px;
-  text-decoration: none;
-  font-size: 15px;
-  color: #818181;
-  display: block;
-}
+      padding: 3px 3px 3px 3px;
+      text-decoration: none;
+      font-size: 15px;
+      color: #818181;
+      display: block;
+      }
 
 .sidenav a:hover {
-  color: #f1f1f1;
-}
+      color: #f1f1f1;
+      }
+                                    /* responsive code */
 @media screen and (max-width: 600px) {
-  .sidenav {height: 100%;}
-  .column {width: 100%}
-  .main {width: 100%}
-  }
+      .sidenav {height: 100%;}
+      .column {width: 100%; height: 300px;}
+      .main {width: 100%}
+      }
 @media screen and (max-height: 450px) {
-  .sidenav {height: 100%;}
-  .column {width: 100%;}
-  .main {width: 100%;}
-}
+      .sidenav {height: 100%;}
+      .column {width: 100%; height: 300px;}
+      .main {width: 100%;}
+      }
 
 </style>
 </head>
