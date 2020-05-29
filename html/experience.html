@@ -9,94 +9,104 @@
   <meta name="author" content="J. Alfonso Maldonado">
   <meta name="viewport" content="width=device-width, intitial-scale=1">
   
-<style>
+  <style>
 
+body {
+   font-family: "georgia";
+    }
+footer {
+    font-family: "georgia";
+}
+ a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}   
+p {line-height:12px;}    
+l {line-height: 17px; font-size:15px; font-weight:bold; width:200%; border:1px solid #000000; padding:0px; margin:1px;}
+lw {line-height: 17px; font-size:15px; font-weight:bold; color:#ffffff; width:500px; border:1px solid #ffffff; padding:0px; margin:1px;}
+sm {line-height:14px; font-size:12px;}
+sw {line-height:14px; font-size:12px; color:#ffffff;}
 
-* {
-      box-sizing: border-box;
-      }  
-  
-.column {             
-      float: left;
-      width: 25%;
-      padding: 3px;
-      height: 550px;
-      }
+    * {
+  box-sizing: border-box;
+}
 
-.row:after {   
-      content: "";
-      display: table;
-      clear: both;  
-      }
-                 
-.main {
-      margin-left: 87px;
-      }
-                            
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  height: 550px;/*height: 500px Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
 .sidenav {
-      height: 100%;
-      width: 87px;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #b09073;
-      overflow-x: hidden;
-      padding-top: 20px;
-      }
+  height: 100%;
+  width: 87px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #b09073;
+  padding-top: 20px;
+  overflow-x: hidden;
+}
 
 .sidenav a {
-      padding: 3px 3px 3px 3px;
-      text-decoration: none;
-      font-size: 15px;
-      color: #818181;
-      display: block;
-      }
+  padding: 3px 3px 3px 3px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+}
 
 .sidenav a:hover {
-      color: #f1f1f1;
-      }
+  color: #f1f1f1;
+}
 
+.main {
+  margin-left: 87px; /* Same as the width of the sidenav */
+}
 @media screen and (max-width: 600px) {
-      .column {width: 100%;}
-      .sidenav {height: 100%;}
-      .main {width: 100%;}
-      }
-
+  .column {width: 100%;}
+  .sidenav {height: 100%;}
+   .main {width: 100%;}
+  }
 @media screen and (max-height: 450px) {
-      .column {width: 100%;}
-      .sidenav {height: 100%;}
-      .main {width: 100%;}
-      }
+  .column {width: 100%;}
+  .sidenav {height: 100%;}
+  .main {height: 100%;}
+}
 
-footer {
-a:link {
-      color: #FFFFFF;
-      font-family: "georgia";
-      background-color: transparent;
-      text-decoration: underline;
-      }
-a:visited {
-      color: pink;
-      background-color: transparent;
-      text-decoration: none;
-      }
-a:hover {
-      color: red;
-      background-color: transparent;
-      text-decoration: underline;
-      }
-a:active {
-      color: yellow;
-      background-color: transparent;
-      text-decoration: underline;
-      } 
-        }         
 </style>
 </head>
-
 <body>
-  
+
 <div class="sidenav">
   <center><a href="../index.html"><img src="../assets/sideFace2.png" alt="Alfonso" style="width: 90%; padding-top: 10px;"></a>
   <a href="experience.html"><img src="../assets/YogaExperienceLogo.png" alt="Experience" style="width: 90%; padding-top: 10px;"></a>
@@ -107,27 +117,68 @@ a:active {
 
 <!--Business Column-->
 <div class="main">
-    <div class="row">
-        <div class="column" style="background-color:#013d08;">
-        </div>
+<div class="row">
+  <div class="column" style="background-color:#013d08;">
+    <center><img src="../assets/BusinessConsultingHeadLogo.png" alt="Business Consulting Experience" width="150px" height="135px">
+      <p><lw>International BI Consultant</lw>
+        <br><sw>Mexico City and Colorado<br>(January 2012 – Present)</sw></center></p>
+    <p><justify><sw>  
+            ◘ Develop software algorithms for business automation and computational analysis.
+        <br>◘ Consult multi-national executives in Latin America on international contracts and antitrust laws.
+        <br>◘ Research and write industry legal briefs on international business and trade.
+      </sw></justify></p>
+  <center><p><lw>CEO's Executive Assistant</lw><sw><br>Violy & Company, New York City<br>(June 1997 - May 1998)</center></sw></p>
+    <p><justify><sw>
+            ◘ Wrote business correspondence for mergers and acquisitions in Latin America 
+       </sw></justify><p>
+  </div>
   
 <!--Technology Column-->
-        <div class="column" style="background-color:#ffff00;">
-        </div>
+  <div class="column" style="background-color:#ffff00;">
+    <center><img src="../assets/TechnologyHeadLogo.png" alt="Technology Experience" width="150px" height="135px"></center>
+      <center><p><l>Commercial Director for Latin America</l><br><sm>Cortado Inc., Latin America<br>(July 2007 – January 2012)</sm></p></center>
+        <p><sm><justify>
+          ◘ Recruited and trained software distribution channels.
+      <br>◘ Coordinated technology implementations for globally distributed systems.
+      <br>◘ Established ThinPrint as the industry leader in Latin America by increasing sales over 400%.</justify><sm></p>
+          
+ <center><p><l>Sales Trainer</l><sm><br>Sprint, Colorado<br>(June 2005 - May 2007)</sm></p></center>
+          <p><sm><justify>◘ Trained points of sale on emerging cellular technology.</sm></justify></p>
+  </div>
           
 <!--Media Column-->
-        <div class="column" style="background-color:#013d08;">
-        </div>
-
+  <div class="column" style="background-color:#013d08;">
+    <center><img src="../assets/MediaHeadLogo.png" alt="Media Experience" width="150px" height="135px"></center>
+      <center><p><lw>Marketing Director</lw><sw><br>La Nueva Voz, Denver<br>(January 2003 – April 2005)</sw></p></center>
+        <justify><p><sw>
+              ◘ Created editorial supplements for niche markets.
+          <br>◘ Increased sales over 300%, doubling circulation and quadrupling page count.
+          <br>◘ Produced and moderated live televised debates for Denver government.</sw></p></justify> 
+      <center><p><lw>Editor</lw><sw><br>Televisa, Miami and Mexico City<br>(July 1999 – November 2002)</sw></p></center>
+        <p><justify><sw>
+      ◘ Produced online productions for alo.com. and wrote daily news articles in Spanish.</justify></sw></p>
+      <center><p><lw>Publisher's Executive Assistant</lw><sw><br>La Opinion, Los Angeles<br>(June 1998 - June 1999)</sw></p></center>
+        <p><justify><sw>
+      ◘ Wrote proposals for new business across all broadcast media.
+          </sw></justify></p>
+  </div>
 <!--Science Column-->
-        <div class="column" style="background-color:#ffff00;">
-        </div>
-    </div>
+  <div class="column" style="background-color:#ffff00;">
+    <center><img src="../assets/ScienceHeadLogo.png" alt="Science Experience" width="150px" height="135px"></center>
+    <center><p><l>Genetics Researcher</l><sm><br>Boyer Center for Molecular Medicine at Yale<br>(September 1993 - May 1997)</sm></p></center>
+        <p><justify><sm>
+          ◘ Sequenced the DNA mutations of Caenorhabditis elegans and their offspring after exposure to industrial chemicals.</justify></sm></p>
+      <center><p><l>Pathology Researcher</l><sm><br>CU Center for Diabetes Research<br>(June 1991 - August 1993)</sm></p></center>
+    <p><justify><sm>
+      ◘ Transplanted langerhan cells in mice in attempts to induce insulin production by organs other than the pancreas. Results were analyzed with Elispot assays. 
+      </justify></sm></p>
+  </div>
+</div>
+  
 </body>
   
 <footer>
-  <div style="width: 100%; text-align: center; color: #ffffff; background-color: #333333; border: 1px solid #000; height: 70px; padding-top: 5px; overflow: visible;"> 5492 CR 32; Longmont, CO 80504 <br><a href="mailto:josealfonsomaldonado@gmail.com">JoseAlfonsoMaldonado@gmail.com</a><br>(720) 453-3709
-  </div>
+   <div style="width: 100%; text-align: center; color: #ffffff; background-color: #333333; border: 1px solid #000; height: 70px; padding-top: 5px; overflow: visible;"> 5492 CR 32; Longmont, CO 80504 <br><a href="mailto:josealfonsomaldonado@gmail.com">JoseAlfonsoMaldonado@gmail.com</a><br>(720) 453-3709
 </div>
-</footer>
+  </footer>
 </html>
