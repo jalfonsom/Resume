@@ -87,67 +87,6 @@ lw { font-size:15px; font-weight:bold; color:#ffffff; padding:1px; margin:0px; t
 sm { font-size:12px;}
 sw { font-size:12px; color:#ffffff;}
 
-* {
-  box-sizing: border-box;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 20px 5px 5px;
-  height: 550px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-body {
-  font-family: "Lato", sans-serif;
-  background-color: #FFFFFF;
-}
-
-.sidenav {
-  height: 100%;
-  width: 87px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #b09073;
-  overflow-x: hidden;
-  padding-top: 20px;
-  text-align: center;
-}
-
-.sidenav a {
-  padding: 3px 3px 3px 3px;
-  text-decoration: none;
-  font-size: 15px;
-  color: #818181;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.main {
-  margin-left: 87px;
-}
-                     
-.p1 {
-      clear: left;
-      line-height: 12px;
-      }
-.p2 {
-      line-height: 12px;
-      {
-
-<!--
     * {
   box-sizing: border-box;
 }
@@ -180,7 +119,6 @@ body {
   background-color: #b09073;
   padding-top: 20px;
   overflow-x: hidden;
-  text-align: center;
 }
 
 .sidenav a {
@@ -198,8 +136,6 @@ body {
 .main {
   margin-left: 87px; /* Same as the width of the sidenav */
 }
-//-->
-
 @media screen and (max-width: 600px) {
   .column {width: 100%;}
   .sidenav {height: 100%;}
@@ -210,83 +146,91 @@ body {
   .sidenav {height: 100%;}
   .main {height: 100%;}
 }
+img {
+      float: left;
+      }
                      
-
+.p1 {
+      clear: left;
+      line-height: 12px;
+      }
+.p2 {
+      line-height: 12px;
+      {
 </style>
 </head>
 <body>
 
 <div class="sidenav">
   <center><a href="../index.html"><img src="../assets/sideFace2.png" alt="Alfonso" style="width: 90%; padding-top: 10px;"></a>
-  <a href="experience.html"><img src="../assets/HA.gif" alt="Experience" style="width: 90%; height:80px; padding-top: 10px;"></a>  
+  <a href="experience.html"><img src="../assets/YogaExperienceLogo.png" alt="Experience" style="width: 90%; padding-top: 10px;"></a>
   <a href="education.html"><img src="../assets/EducationLogo.png" alt="Education" style="width:90%; padding-top: 10px;"></a>
   <a href="skills.html"><img src="../assets/YogaSkillsLogo.png" alt="Skills" style="width:90%; padding-top: 10px;"></a>
     </center>
 </div>
 
-
-<div class="main">
 <!--Business Column-->
+<div class="main">
 <div class="row">
   <div class="column" style="background-color:#013d08;">
     <center><p><img src="../assets/Business2.png" alt="Business Consulting Experience" width="100px" height="100px"><br><bt>BUSINESS</bt></p>
       <p class="p1 p2"><hr></p>
       <p class="p2"><lw>International BI Consultant</lw>
         <br><sw>Mexico City and Colorado<br>(January 2012 – Present)</sw></center></p>
-    <p><sw>  
+    <p><justify><sw>  
             ◘ Develop software algorithms for business automation and computational analysis.
         <br>◘ Consult multi-national executives in Latin America on international contracts and antitrust laws.
         <br>◘ Research and write industry legal briefs on international business and trade.
-      </sw></p>
+      </sw></justify></p>
   <center><p class="p2"><lw>CEO's Executive Assistant</lw><sw><br>Violy & Company, New York City<br>(June 1997 - May 1998)</center></sw></p>
-    <p><sw>
+    <p><justify><sw>
             ◘ Wrote business correspondence for mergers and acquisitions in Latin America 
-       </sw><p>
+       </sw></justify><p>
   </div>
   
 <!--Technology Column-->
   <div class="column" style="background-color:#ffff00;">
-    <center><p><img class="incol" src="../assets/Technology2.png" alt="Technology Experience" width="100px" height="100px"><br><tt>TECHNOLOGY</tt></p></center>
+    <center><p><img src="../assets/Technology2.png" alt="Technology Experience" width="100px" height="100px"><br><tt>TECHNOLOGY</tt></p></center>
     <center><p class="p1 p2"><hr></p>
       <p class="p2"><l>Commercial Director for Latin America</l><br><sm>Cortado Inc., Latin America<br>(July 2007 – January 2012)</sm></p></center>
-        <p><sm>
+        <p><sm><justify>
           ◘ Recruited and trained software distribution channels.
       <br>◘ Coordinated technology implementations for globally distributed systems.
-      <br>◘ Established ThinPrint as the industry leader in Latin America by increasing sales over 400%.<sm></p>
+      <br>◘ Established ThinPrint as the industry leader in Latin America by increasing sales over 400%.</justify><sm></p>
           
  <center><p class="p2"><l>Sales Trainer</l><sm><br>Sprint, Colorado<br>(June 2005 - May 2007)</sm></p></center>
-          <p><sm>◘ Trained points of sale on emerging cellular technology.</sm></p>
+          <p><sm><justify>◘ Trained points of sale on emerging cellular technology.</sm></justify></p>
   </div>
           
 <!--Media Column-->
   <div class="column" style="background-color:#013d08;">
-    <center><p><img class="incol" src="../assets/Media2.png" alt="Media Experience" width="100px" height="100px"><br><mt>MEDIA</mt></p></center>
+    <center><p><img src="../assets/Media2.png" alt="Media Experience" width="100px" height="100px"><br><mt>MEDIA</mt></p></center>
       <center><p class="p1 p2"><hr></p>
           <p class="p2"><lw>Marketing Director</lw><sw><br>La Nueva Voz, Denver<br>(January 2003 – April 2005)</sw></p></center>
-        <p><sw>
+        <justify><p><sw>
               ◘ Created editorial supplements for niche markets.
           <br>◘ Increased sales over 300%, doubling circulation and quadrupling page count.
-          <br>◘ Produced and moderated live televised debates for Denver government.</sw></p> 
+          <br>◘ Produced and moderated live televised debates for Denver government.</sw></p></justify> 
       <center><p class="p2"><lw>Editor</lw><sw><br>Televisa, Miami and Mexico City<br>(July 1999 – November 2002)</sw></p></center>
-        <p><sw>
-      ◘ Produced online productions for alo.com. and wrote daily news articles in Spanish.</sw></p>
+        <p><justify><sw>
+      ◘ Produced online productions for alo.com. and wrote daily news articles in Spanish.</justify></sw></p>
       <center><p class="p2"><lw>Publisher's Executive Assistant</lw><sw><br>La Opinion, Los Angeles<br>(June 1998 - June 1999)</sw></p></center>
-        <p><sw>
+        <p><justify><sw>
       ◘ Wrote proposals for new business across all broadcast media.
-          </sw></p>
+          </sw></justify></p>
   </div>
                            
 <!--Science Column-->
   <div class="column" style="background-color:#ffff00;">
-    <center><p><img class="incol" src="../assets/Science2.png" alt="Science Experience" width="100px" height="100px"><br><st>SCIENCE</st></p></center>
+    <center><p><img src="../assets/Science2.png" alt="Science Experience" width="100px" height="100px"><br><st>SCIENCE</st></p></center>
       <center><p class="p1 p2"><hr></p>
           <p class="p2"><l>Genetics Researcher</l><sm><br>Boyer Center for Molecular Medicine at Yale<br>(September 1993 - May 1997)</sm></p></center>
-        <p><sm>
-          ◘ Sequenced the DNA mutations of Caenorhabditis elegans and their offspring after exposure to industrial chemicals.</sm></p>
+        <p><justify><sm>
+          ◘ Sequenced the DNA mutations of Caenorhabditis elegans and their offspring after exposure to industrial chemicals.</justify></sm></p>
       <center><p class="p2"><l>Pathology Researcher</l><sm><br>CU Center for Diabetes Research<br>(June 1991 - August 1993)</sm></p></center>
-    <p><sm>
+    <p><justify><sm>
       ◘ Transplanted langerhan cells in mice in attempts to induce insulin production by organs other than the pancreas. Results were analyzed with Elispot assays. 
-      </sm></p>
+      </justify></sm></p>
   </div>
 </div>
   
